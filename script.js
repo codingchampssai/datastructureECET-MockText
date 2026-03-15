@@ -10,116 +10,127 @@ return false;
 
 const questions = [
 
-{"q":"Web terminology refers to","options":["Programming languages","Basic terms used in web technology","Database management","Software testing"],"answer":1},
-{"q":"A collection of related web pages is called","options":["URL","Website","Browser","Server"],"answer":1},
-{"q":"The first page of a website is called","options":["Index page","Web page","Home page","Main server"],"answer":2},
-{"q":"Which software is used to access websites?","options":["Web browser","Compiler","Editor","Database"],"answer":0},
-{"q":"Example of a web browser","options":["Chrome","Linux","Python","Oracle"],"answer":0},
+{q:"What is an Operating System?",options:["Application software","System software","Programming language","Compiler"],answer:1},
 
-{"q":"HTML stands for","options":["Hyper Transfer Markup Language","Hyper Text Markup Language","High Text Markup Language","Hyper Tool Markup Language"],"answer":1},
-{"q":"HTML was developed by","options":["James Gosling","Tim Berners-Lee","Bill Gates","Dennis Ritchie"],"answer":1},
-{"q":"HTML was developed in","options":["1989","1991","1995","2000"],"answer":1},
-{"q":"HTML documents start with","options":["<body>","<html>","<head>","<title>"],"answer":1},
-{"q":"The visible part of a web page is inside","options":["<head>","<body>","<html>","<meta>"],"answer":1},
+{q:"A process is",options:["Program in disk","Program in execution","Program compiled","Program in ROM"],answer:1},
 
-{"q":"An HTML element consists of","options":["Tag only","Attribute only","Start tag, content, end tag","Script"],"answer":2},
-{"q":"Attributes are written in","options":["End tag","Start tag","Content","Body tag"],"answer":1},
-{"q":"Example of attribute","options":["<p>","<html>","href","<head>"],"answer":2},
+{q:"PCB stands for",options:["Process Control Block","Program Control Block","Process Code Block","Program Code Block"],answer:0},
 
-{"q":"Largest heading tag is","options":["<h1>","<h3>","<h6>","<h4>"],"answer":0},
-{"q":"Smallest heading tag is","options":["<h1>","<h6>","<h5>","<h4>"],"answer":1},
+{q:"The smallest unit of execution is",options:["Process","Thread","Program","File"],answer:1},
 
-{"q":"Bold text tag","options":["<i>","<b>","<u>","<tt>"],"answer":1},
-{"q":"Italic text tag","options":["<i>","<b>","<u>","<sup>"],"answer":0},
-{"q":"Underline text tag","options":["<b>","<u>","<i>","<sub>"],"answer":1},
+{q:"Which OS allows multiple users at the same time?",options:["Batch OS","Multi-user OS","Single user OS","Real-time OS"],answer:1},
 
-{"q":"Unordered list tag","options":["<ol>","<ul>","<li>","<dl>"],"answer":1},
-{"q":"Ordered list tag","options":["<ol>","<ul>","<li>","<menu>"],"answer":0},
-{"q":"List item tag","options":["<li>","<ol>","<ul>","<dl>"],"answer":0},
+{q:"Batch OS executes",options:["Programs randomly","Jobs in groups","Programs in parallel","Files sequentially"],answer:1},
 
-{"q":"Table tag","options":["<tr>","<td>","<table>","<th>"],"answer":2},
-{"q":"Table row tag","options":["<td>","<tr>","<th>","<table>"],"answer":1},
-{"q":"Table data tag","options":["<td>","<th>","<tr>","<table>"],"answer":0},
-{"q":"Table heading tag","options":["<th>","<td>","<tr>","<table>"],"answer":0},
+{q:"Spooling mainly uses",options:["RAM","Disk","CPU","Cache"],answer:1},
 
-{"q":"Tag used to create link","options":["<img>","<a>","<link>","<href>"],"answer":1},
-{"q":"Attribute used in <a> tag","options":["src","href","alt","type"],"answer":1},
-{"q":"Tag used to display image","options":["<img>","<a>","<picture>","<media>"],"answer":0},
-{"q":"Attribute that specifies image location","options":["alt","src","link","path"],"answer":1},
+{q:"Buffering temporarily stores data in",options:["RAM","Disk","CPU","Register"],answer:0},
 
-{"q":"Form tag","options":["<input>","<form>","<button>","<textarea>"],"answer":1},
-{"q":"Input field tag","options":["<input>","<form>","<label>","<option>"],"answer":0},
-{"q":"Dropdown list tag","options":["<select>","<input>","<button>","<form>"],"answer":0},
-{"q":"Multi-line input tag","options":["<input>","<textarea>","<select>","<option>"],"answer":1},
+{q:"Multiprogramming improves",options:["CPU utilization","Disk speed","Network speed","RAM size"],answer:0},
 
-{"q":"Tag used to divide browser window","options":["<frame>","<frameset>","<iframe>","<noframe>"],"answer":1},
-{"q":"Frame tag loads webpage","options":["<frame>","<frameset>","<iframe>","<body>"],"answer":0},
-{"q":"Tag used if frames not supported","options":["<iframe>","<noframes>","<frameset>","<frame>"],"answer":1},
-{"q":"Tag used to embed webpage inside page","options":["<frame>","<iframe>","<frameset>","<embed>"],"answer":1},
+{q:"Which scheduling algorithm executes processes in arrival order?",options:["SJF","FCFS","Round Robin","Priority"],answer:1},
 
-{"q":"CSS stands for","options":["Computer Style Sheets","Cascading Style Sheets","Color Style Sheets","Creative Style Sheets"],"answer":1},
-{"q":"CSS is used for","options":["Programming","Styling web pages","Database","Networking"],"answer":1},
-{"q":"Inline CSS is written in","options":["HTML tag","CSS file","Head tag only","Script"],"answer":0},
-{"q":"Internal CSS is written in","options":["<body>","<style>","<script>","<title>"],"answer":1},
-{"q":"External CSS file extension","options":[".html",".js",".css",".php"],"answer":2},
+{q:"Which algorithm gives minimum average waiting time?",options:["SJF","FCFS","Round Robin","Priority"],answer:0},
 
-{"q":"ID selector uses","options":[".","#","*","@"],"answer":1},
-{"q":"Class selector uses","options":[".","#","*","@"],"answer":0},
-{"q":"Property used to change text color","options":["font","text","color","style"],"answer":2},
-{"q":"Property for background color","options":["color","background-color","text-color","bg-color"],"answer":1},
-{"q":"Property for space outside element","options":["margin","padding","border","width"],"answer":0},
-{"q":"Property for space inside element","options":["margin","padding","border","spacing"],"answer":1},
-{"q":"Border property defines","options":["Text size","Background","Border around element","Page title"],"answer":2},
-{"q":"CSS box model consists of","options":["margin, border, padding, content","margin, header, padding, body","border, style, content, text","margin, padding, style, color"],"answer":0},
+{q:"Round Robin scheduling uses",options:["Priority","Time quantum","Disk speed","Memory size"],answer:1},
 
-{"q":"XML stands for","options":["Extended Markup Language","Extensible Markup Language","Extra Markup Language","External Markup Language"],"answer":1},
-{"q":"Which of the following is true about XML?","options":["Tags are predefined","Tags are user-defined","Tags are fixed","Tags cannot be created"],"answer":1},
-{"q":"An XML document must have","options":["Two root elements","Multiple root elements","One root element","No root element"],"answer":2},
-{"q":"XML tags are","options":["Case insensitive","Case sensitive","Optional","Not required"],"answer":1},
+{q:"Context switching means",options:["Process creation","CPU switching between processes","Process deletion","Memory allocation"],answer:1},
 
-{"q":"Which language is used for client-side scripting?","options":["PHP","JavaScript","ASP","JSP"],"answer":1},
-{"q":"Client-side scripts run on","options":["Web server","Browser","Database","Operating system"],"answer":1},
-{"q":"Server-side scripts run on","options":["Browser","Client computer","Web server","CSS engine"],"answer":2},
-{"q":"Which is a server-side scripting language?","options":["JavaScript","PHP","HTML","CSS"],"answer":1},
+{q:"Throughput means",options:["Number of completed processes","Waiting time","CPU idle time","Response time"],answer:0},
 
-{"q":"JavaScript is a","options":["Programming language","Scripting language","Database language","Query language"],"answer":1},
-{"q":"Which tag is used to write JavaScript?","options":["<script>","<js>","<javascript>","<code>"],"answer":0},
-{"q":"Which method selects an element by ID in JavaScript?","options":["getElementByName()","getElementById()","getElementByTag()","getElement()"],"answer":1},
-{"q":"Which function shows a popup message?","options":["prompt()","confirm()","alert()","message()"],"answer":2},
+{q:"Waiting time means",options:["Time spent in ready queue","CPU execution time","Disk time","Response time"],answer:0},
 
-{"q":"AJAX stands for","options":["Asynchronous JavaScript and XML","Advanced JavaScript and XML","Automatic JavaScript and XML","Applied JavaScript and XML"],"answer":0},
-{"q":"AJAX allows","options":["Full page reload","Partial page update","Page deletion","HTML editing"],"answer":1},
-{"q":"AJAX uses which object to communicate with server?","options":["XMLHttpRequest","ServerRequest","HTTPObject","RequestServer"],"answer":0},
+{q:"Response time means",options:["Time to first response","Completion time","CPU time","Waiting time"],answer:0},
 
-{"q":"Which library simplifies JavaScript coding?","options":["jQuery","Bootstrap","Angular","React"],"answer":0},
-{"q":"jQuery is written in","options":["PHP","Java","JavaScript","HTML"],"answer":2},
-{"q":"jQuery syntax starts with","options":["#","$","&","@"],"answer":1},
-{"q":"Which selector selects element by ID?","options":[".demo","#demo","demo","*demo"],"answer":1},
-{"q":"Which selector selects elements by class?","options":[".demo","#demo","demo","*demo"],"answer":0},
-{"q":"Which event runs when document is fully loaded?","options":["load()","ready()","start()","open()"],"answer":1},
-{"q":"Which jQuery effect hides an element?","options":["show()","hide()","display()","remove()"],"answer":1},
-{"q":"Which jQuery effect shows an element slowly?","options":["fadeIn()","fadeOut()","slideUp()","hide()"],"answer":0},
-{"q":"Which jQuery effect hides element slowly?","options":["fadeOut()","fadeIn()","slideDown()","show()"],"answer":0},
-{"q":"Which function gets value from input field?","options":["text()","html()","val()","attr()"],"answer":2},
-{"q":"Which function changes CSS style?","options":["css()","style()","design()","color()"],"answer":0},
+{q:"Semaphore is used for",options:["Memory allocation","Process synchronization","File management","Disk scheduling"],answer:1},
 
-{"q":"PHP stands for","options":["Personal Hypertext Processor","Hypertext Preprocessor","Private Home Page","Hyper Page Processor"],"answer":1},
-{"q":"Which symbol is used to declare variables in PHP?","options":["@","#","$","&"],"answer":2},
-{"q":"Which protocol is used by web servers to communicate with browsers?","options":["FTP","HTTP","SMTP","TCP"],"answer":1},
-{"q":"Which of the following is a web server?","options":["Apache","Java","Python","C++"],"answer":0},
-{"q":"Which PHP function returns the length of a string?","options":["strrev()","strlen()","length()","size()"],"answer":1},
-{"q":"What will be the output? echo \"ABC\" + 5;","options":["ABC5","Error","5","ABC"],"answer":2},
-{"q":"Which method sends form data through the URL?","options":["POST","GET","PUT","DELETE"],"answer":1},
-{"q":"Which superglobal variable is used to collect form data using POST method?","options":["$_GET","$_POST","$_FORM","$_DATA"],"answer":1},
-{"q":"Which function counts array elements?","options":["length()","size()","count()","array_size()"],"answer":2},
-{"q":"Which function reverses a string in PHP?","options":["reverse()","strrev()","strlen()","str_replace()"],"answer":1},
-{"q":"Which HTTP method is used to retrieve data?","options":["GET","POST","PUT","DELETE"],"answer":0},
-{"q":"Which web server is developed by Microsoft?","options":["Apache","IIS","Nginx","Tomcat"],"answer":1},
-{"q":"Which function connects PHP with MySQL?","options":["mysql_connect()","mysqli_connect()","php_connect()","db_connect()"],"answer":1},
-{"q":"Which function replaces text in a string?","options":["strrev()","strlen()","str_replace()","replace()"],"answer":2},
-{"q":"Which architecture is used in web applications?","options":["Star","Client–Server","Ring","Bus"],"answer":1}
-];
-questions.sort(() => Math.random() - 0.5);
+{q:"Binary semaphore values are",options:["0 and 1","0 to 10","1 to 100","-1 to 1"],answer:0},
+
+{q:"IPC stands for",options:["Inter Process Communication","Internal Program Control","Input Process Control","Internal Process Communication"],answer:0},
+
+{q:"Deadlock occurs when",options:["Processes wait forever for resources","CPU stops","Disk fails","Memory overflow"],answer:0},
+
+{q:"How many conditions are required for deadlock?",options:["2","3","4","5"],answer:2},
+
+{q:"Which is a deadlock condition?",options:["Mutual exclusion","Circular wait","Hold and wait","All of these"],answer:3},
+
+{q:"Banker's algorithm is used for",options:["Deadlock prevention","Deadlock avoidance","Deadlock detection","Process scheduling"],answer:1},
+
+{q:"Fragmentation means",options:["Wasted memory space","Memory allocation","CPU scheduling","Disk failure"],answer:0},
+
+{q:"External fragmentation occurs when",options:["Free memory is scattered","Memory block is larger than required","CPU idle","Disk error"],answer:0},
+
+{q:"Paging divides memory into",options:["Pages and frames","Segments and blocks","Files and folders","Tracks and sectors"],answer:0},
+
+{q:"Segmentation divides program into",options:["Logical parts","Blocks","Pages","Frames"],answer:0},
+
+{q:"Virtual memory uses",options:["Disk as extra memory","CPU as memory","Cache as disk","RAM as disk"],answer:0},
+
+{q:"Demand paging loads pages",options:["When required","At program start","Randomly","After execution"],answer:0},
+
+{q:"When required page is not in memory",options:["Page hit occurs","Page fault occurs","Disk crash occurs","CPU failure"],answer:1},
+
+{q:"Page replacement is needed when",options:["Memory is full","Disk is full","CPU busy","RAM empty"],answer:0},
+
+{q:"FIFO page replacement means",options:["First page removed first","Last page removed","Random page removed","New page removed"],answer:0},
+
+{q:"LRU stands for",options:["Least Recently Used","Last Random Use","Longest Running Unit","Least Resource Usage"],answer:0},
+
+{q:"Which page replacement algorithm is best theoretically?",options:["FIFO","Optimal","LRU","Random"],answer:1},
+
+{q:"Thrashing occurs when",options:["Too many page faults","CPU idle","Disk failure","Network slow"],answer:0},
+
+{q:"Disk scheduling is used to",options:["Decide order of disk requests","Manage memory","Schedule CPU","Allocate files"],answer:0},
+
+{q:"Disk performance parameter includes",options:["Seek time","Rotational latency","Transfer time","All of these"],answer:3},
+
+{q:"Seek time means",options:["Time for disk head movement","Time for CPU execution","File reading time","RAM allocation"],answer:0},
+
+{q:"FIFO disk scheduling serves requests",options:["In arrival order","Closest request first","Random order","Reverse order"],answer:0},
+
+{q:"SSTF stands for",options:["Shortest Seek Time First","Shortest Service Time First","System Seek Transfer First","Small Seek Time Function"],answer:0},
+
+{q:"SSTF selects",options:["Closest disk request","First request","Last request","Random request"],answer:0},
+
+{q:"SCAN algorithm is also called",options:["Elevator algorithm","Circular algorithm","Random algorithm","Queue algorithm"],answer:0},
+
+{q:"File management means",options:["Managing files on storage","CPU scheduling","Memory allocation","Disk repair"],answer:0},
+
+{q:"Which is a file operation?",options:["Create","Read","Write","All of these"],answer:3},
+
+{q:"Sequential access means",options:["Access data one by one","Random access","Direct access","Block access"],answer:0},
+
+{q:"Direct access means",options:["Access any location directly","Sequential reading","Disk scanning","Random scheduling"],answer:0},
+
+{q:"Contiguous allocation stores files",options:["Continuously","Randomly","Linked blocks","Indexed blocks"],answer:0},
+
+{q:"Linked allocation uses",options:["Pointers","Index blocks","Frames","Pages"],answer:0},
+
+{q:"Indexed allocation uses",options:["Index block","Pointers","Continuous blocks","Random blocks"],answer:0},
+
+{q:"Directory is used to",options:["Organize files","Schedule CPU","Allocate memory","Manage network"],answer:0},
+
+{q:"Single-level directory stores",options:["All files in one directory","Files in many directories","Files in memory","Files in disk blocks"],answer:0},
+
+{q:"Two-level directory means",options:["Separate directory for each user","Two files only","Two processes","Two disks"],answer:0},
+
+{q:"Tree directory structure is",options:["Hierarchical","Linear","Circular","Random"],answer:0},
+
+{q:"Disk platter is",options:["Circular disk surface","CPU chip","RAM block","Disk head"],answer:0},
+
+{q:"Track is",options:["Circular path on disk","Disk surface","Disk head","Memory block"],answer:0},
+
+{q:"Sector is",options:["Smallest disk storage unit","Disk head","Disk track","File"],answer:0},
+
+{q:"Cylinder is",options:["Collection of tracks","Disk head","RAM block","File block"],answer:0},
+
+{q:"Disk head reads data from",options:["Disk surface","CPU","RAM","Network"],answer:0},
+
+{q:"Belady’s anomaly occurs in",options:["FIFO","LRU","Optimal","SSTF"],answer:0},
+
+{q:"Best page replacement algorithm theoretically",options:["Optimal","FIFO","LRU","Random"],answer:0}
+
+];questions.sort(() => Math.random() - 0.5);
 
 loadQuiz();
 
@@ -164,26 +175,24 @@ quiz.innerHTML+=html;
 
 function submitQuiz(){
 
-let score = 0;
+let correct = 0;
 
 questions.forEach((q,i)=>{
 
 let selected = document.querySelector(`input[name="q${i}"]:checked`);
 
-if(selected && selected.value == q.answer){
-score++;
+if(selected && Number(selected.value) === q.answer){
+correct++;
 }
 
 });
 
-// store correct score
-localStorage.setItem("score", score);
-localStorage.setItem("total", questions.length);
+let total = questions.length;
+let incorrect = total - correct;
 
-// mark quiz attempted
+localStorage.setItem("correct", correct);
+localStorage.setItem("incorrect", incorrect);
 
-
-// go to result page
-window.location.href = "result.html";
+window.location.href="result.html";
 
 }
